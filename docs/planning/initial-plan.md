@@ -2,8 +2,8 @@
 
 The first stage is to simply be able to parse an entire project and generate all of the templ files into HTML. This should be fairly simple as the majority of this is documented on the templ docs
 
-1. Have a set folder for templ files
-2. Find all files within templ folder
+1. Have a set folder for templ files and get all files within that folder and subdirectories
+2. Find all functions within the templ go files
 3. Render all files and save as html
 4. Output to templ directory for all html files
 
@@ -20,3 +20,13 @@ Beyond simply generating the HTML there are a number of different features that 
 ## Final Goal
 
 For the final project, I want to have a tool which can parse a go project with templ files, local the templ files, render the templ files and provide a debug version of the templ function with the css styling and stubbed data
+
+# (DONE) Step 1: Get all templ files
+
+This step is extremely easy. Simply have a set directory (this can easily be changed to a variable later), search this directory for any files with the suffix of _templ.go and return them as a list of strings
+
+# Step 2: Find all the Go templ functions
+
+This is a bit trickier
+
+# Step 3:
